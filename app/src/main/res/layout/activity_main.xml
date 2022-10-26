@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textColor="@color/azure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Калькулятор"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"  />
+    <EditText
+        android:id="@+id/firstvalue"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:hint="Введіть перше число"
+        android:layout_margin="10dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/secondvalue"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Введіть друге число"
+        android:inputType="number" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:weightSum="2" >
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/azure" />
+        <Button
+            android:id="@+id/btnminus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/azure" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:weightSum="2" >
+        <Button
+            android:id="@+id/btnmultiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/azure" />
+        <Button
+            android:id="@+id/btndivision"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/azure" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:weightSum="2" >
+        <Button
+            android:id="@+id/otvet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Result"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/purple" />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/purple" />
+    </LinearLayout>
+</LinearLayout>
